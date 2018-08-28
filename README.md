@@ -242,7 +242,6 @@
    **Attention**
    
     The timerId would not return in this API. If you need the timerId, please get it by List Timer Task.
-   [List Timer Task](#list-timer-task)
    
 - Request
 
