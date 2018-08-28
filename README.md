@@ -239,6 +239,11 @@
     ```
 
 ### Publish Timer Task
+   **Attention**
+   
+    The timerId would not return in this API. If you need the timerId, please get it by List Timer Task.
+   [List Timer Task](#list-timer-task)
+   
 - Request
 
     |URL|TYPE|PARAMS|Description|
@@ -275,6 +280,7 @@
     ```
 
 ### List Timer Task
+<span id="list_timer_task"></span>
 - Request
 
     |URL|TYPE|PARAMS|Description|
