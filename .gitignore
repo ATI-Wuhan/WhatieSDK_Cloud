@@ -4,7 +4,7 @@
 *.class
 
 # package file ignore
-*.jar
+#*.jar
 *.war
 *.ear
 
