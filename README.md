@@ -130,7 +130,10 @@
 
 - Response
 
-    The typeName represents Device Type which could be "Plug" or "RgbLight" so far (2018.8.27).
+    **Attention**
+    - The deviceId is different from devId: deviceId(Integer), devId(String)
+    - The typeName represents Device Type which could be "Plug" or "RgbLight" so far (2018.8.27)
+    , and typeId which you may not use right now.
     ```json
     {
         "code":0,
@@ -144,8 +147,8 @@
                 "name":"269846",
                 "typeName":"Plug",
                 "online":true,
-                "id":269846,
-                "type":3,
+                "deviceId":269846,
+                "typeId":3,
                 "room":"defaultRoom"
             }
         ],
@@ -279,7 +282,6 @@
     ```
 
 ### List Timer Task
-<span id="list_timer_task"></span>
 - Request
 
     |URL|TYPE|PARAMS|Description|
