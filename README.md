@@ -184,15 +184,16 @@
             
             The dps of light mode has a key "l" which is lowercase of "L", no number "1".
 
-            The light's dps only lightMode is Integer value, the others are all String values.
+            The light's dps only lightMode is Integer value and which has a fixed value in every light mode
+            , the others are all String values which could be set as needed.
 
             - lightMode1: adjust the brightness value of light
 
             ```json
             {
                 "dps": {
-                    "l": "25",
-                    "lightMode": 1
+                    "l": "25", // brightness value
+                    "lightMode": 1 // fixed value
                 }
             }   
             ```
@@ -201,9 +202,9 @@
             ```json
             {
                 "dps": {
-                    "l": "35",
-                    "lightMode": 2,
-                    "rgb": "255_237_228"
+                    "l": "35", // brightness value
+                    "lightMode": 2, // fixed value
+                    "rgb": "255_237_228" // rgb value
                 }
             }
             ```
@@ -212,23 +213,24 @@
             ```json
             {
                 "dps": {
-                    "lightMode": 4,
+                    "lightMode": 4, // fixed value
                     "status": "false"
                 }
             }
             ```
 
-            - lightMode5(StreamLight): rgb1/2/3/4 are four kinds of color's RGB values that you want light to change, and l is the brightness value, t is interval(ms) of StreamLight which 1000 is recommended.
+            - lightMode5(StreamLight): rgb1/2/3/4 are four kinds of color's RGB values that you want light to change
+            , and l is the brightness value, t is interval(ms) of StreamLight which 1000 is recommended.
             ```json
             {
                 "dps": {
-                    "l": "35",
-                    "lightMode": 5,
-                    "rgb1": "255_221_123",
-                    "rgb2": "22_145_56",
-                    "rgb3": "146_237_97",
-                    "rgb4": "46_189_228",
-                    "t": "1000"
+                    "l": "35", // brightness value
+                    "lightMode": 5, // fixed value
+                    "rgb1": "255_221_123", // rgb value one
+                    "rgb2": "22_145_56", // rgb value two
+                    "rgb3": "146_237_97", // rgb value three
+                    "rgb4": "46_189_228", // rgb value four
+                    "t": "1000" // interval value
                 }
             }
             ```
