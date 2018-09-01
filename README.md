@@ -101,6 +101,10 @@
 
 ---
 ## API Doucument
+        
+   **Attention**
+   - **The deviceId is different from devId, both of them are returned in the Device List API(The deviceId is an Integer value while devId is a String value.). 
+   And, IMPORTANT: both of them are used in other API without changing their names, i.e., keeping the names 'deviceId' or 'devId', in other API!!!** 
 
 ### User Login
 - Request
@@ -131,7 +135,7 @@
 - Response
 
     **Attention**
-    - The deviceId is different from devId: deviceId(Integer), devId(String)
+    - The deviceId is different from devId: **deviceId(Integer), devId(String)**
     - The typeName represents Device Type which could be "Plug" or "RgbLight" so far (2018.8.27)
     , and typeId which you may not use right now.
     ```json
@@ -139,7 +143,7 @@
         "code":0,
         "data":[
             {
-                "devId":"0123456abc",
+                "devId":"0123456abc", // String value
                 "dps":{
                     "light":"false",
                     "power":"false"
@@ -147,7 +151,7 @@
                 "name":"269846",
                 "typeName":"Plug",
                 "online":true,
-                "deviceId":269846,
+                "deviceId":269846, // Integer value
                 "typeId":3,
                 "room":"defaultRoom"
             }
@@ -252,10 +256,10 @@
 
     |URL|TYPE|PARAMS|Description|
     |:---:|:---:|:---:|:---:|
-    |https://msg.whatie.net/api/v1/setTimer|POST|deviceId|device id|
+    |https://msg.whatie.net/api/v1/setTimer|POST|deviceId|device id(ex:123456)|
     |||timerType|eg.0000001 only Monday every week, 1000000 only Sunday every week, 0000000 Only once|
     |||finishTime|Current time, eg. 10:15 -> 1015, 00:01 -> 0001|
-    |||dps||
+    |||dps|dps example see Publish New Dps API|
     |||timezone|Timezone, eg.+800, Beijing|
     |||customerId||
 
