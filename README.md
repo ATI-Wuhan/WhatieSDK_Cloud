@@ -292,7 +292,7 @@
 
     |URL|TYPE|PARAMS|Description|
     |:---:|:---:|:---:|:---:|
-    |https://msg.whatie.net/api/v1/listTimer|POST|devId||
+    |https://msg.whatie.net/api/v1/timerList|POST|devId||
 
 - Response
     ```json
